@@ -1,1 +1,63 @@
 /* 主页样式 */
+/* 导航栏 */
+nav {
+  height: 45px;
+  border-bottom: 2px solid #b1191a;
+  font-size: 16px;
+  line-height: 45px;
+}
+nav .fl {
+  width: 210px;
+  height: 45px;
+  background-color: #b1191a;
+  color: #fff;
+  text-align: center;
+  font-weight: 500;
+}
+nav .fr {
+  margin-right: 270px;
+}
+nav .fr a {
+  margin: 0 20px;
+  color: #5d5d5d;
+}
+.nav_detail {
+  height: 460px;
+}
+.nav_detail .detail {
+  width: 210px;
+  height: 100%;
+  background-color: #c81623;
+}
+.detail ul li {
+  position: relative;
+  margin: 9px 0;
+  padding: 0 12px 0;
+}
+.detail ul a {
+  font-size: 14px;
+  color: #fff;
+}
+
+.detail ul li:hover {
+  background-color: #fff;
+  border: 1px #c81623 solid;
+  border-top: none;
+  border-bottom: none;
+}
+.detail ul li:hover a {
+  /* font-size: 17px; */
+  color: #c81623;
+}
+.biglogo {
+  width: 720px;
+  height: 448px;
+  background: url(../static/biglogo.png) no-repeat;
+  margin: 12px 12px 0 12px;
+}
+.service {
+  width: 246px;
+  height: 448px;
+  margin-top: 12px;
+  border: 1px solid #dfdfdf;
+}

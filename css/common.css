@@ -47,6 +47,7 @@
 .style_red {
   color: #c81623;
 }
+/* 搜索栏、logo、购物车 */
 .header {
   margin: 27px auto;
   height: 75px;
@@ -55,6 +56,13 @@
   width: 538px;
   height: 75px;
   margin-left: 160px;
+}
+.header .logo h1 {
+  font-size: 0;
+}
+.header .logo a {
+  display: inline-block;
+  height: 61px;
 }
 .header .fl img {
   margin-top: 7px;
@@ -90,4 +98,46 @@
 }
 .hotwords a:nth-child(1) {
   color: #b1191a;
+}
+.header .shoppingcart {
+  position: relative;
+  width: 140px;
+  height: 35px;
+  background-color: #f7f7f7;
+  line-height: 35px;
+  text-align: center;
+  border: 1px solid #dfdfdf;
+}
+.shoppingcart::before {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  background: url(../static/shoopingcart.png);
+  width: 18px;
+  height: 13px;
+  content: "";
+}
+.shoppingcart::after {
+  position: absolute;
+  right: 15px;
+  content: "\e902";
+  font-family: "icomoon";
+}
+.shoppingcart .count {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: -10px;
+  right: 20px;
+  background-color: #c81623;
+  line-height: 20px;
+  color: #fff;
+  border-radius: 50% 50% 50% 0;
+}
+/* 主页详细导航插入>符号 */
+.detail ul a::after {
+  position: absolute;
+  right: 10px;
+  content: "\e902";
+  font-family: "icomoon";
 }
