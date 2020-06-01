@@ -1,0 +1,22 @@
+/* 主页样式 */
+.mw {
+  color: #666;
+}
+.shortcut .fr ul {
+  float: left;
+}
+.shortcut .mw ul li {
+  font-size: 12px;
+  float: left;
+}
+.fl li {
+  margin: 7.5px 10px 0;
+}
+.fl li a.register {
+  color: red;
+}
+.fr li {
+  border-right: 1px solid #666;
+  padding: 0 15px;
+  margin: 6.5px 0;
+}

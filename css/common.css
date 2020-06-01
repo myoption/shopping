@@ -1,0 +1,15 @@
+/* 版心设置 */
+.mw {
+  width: 1200px;
+  margin: 0 auto;
+}
+.shortcut {
+  height: 31px;
+  background: #f1f1f1;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
