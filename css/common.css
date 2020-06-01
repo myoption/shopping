@@ -3,13 +3,91 @@
   width: 1200px;
   margin: 0 auto;
 }
+/* 引入字体图标 */
+@font-face {
+  font-family: "icomoon";
+  src: url("../fonts/icomoon.eot?ou61td");
+  src: url("../fonts/icomoon.eot?ou61td#iefix") format("embedded-opentype"),
+    url("../fonts/icomoon.ttf?ou61td") format("truetype"),
+    url("../fonts/icomoon.woff?ou61td") format("woff"),
+    url("../fonts/icomoon.svg?ou61td#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+/* 快捷导航栏样式设置 */
 .shortcut {
   height: 31px;
   background: #f1f1f1;
+  line-height: 31px;
 }
 .fl {
   float: left;
 }
 .fr {
   float: right;
+}
+.shortcut .mw ul li {
+  font-size: 12px;
+  float: left;
+  margin: 0 7.5px;
+}
+.shortcut .fr ul li:nth-child(even) {
+  width: 1px;
+  height: 12px;
+  background-color: #666;
+  margin: 9.5px 15px;
+}
+.arrow_icon::after {
+  content: "\e900";
+  font-family: "icomoon";
+  margin-left: 5px;
+}
+.style_red {
+  color: #c81623;
+}
+.header {
+  margin: 27px auto;
+  height: 75px;
+}
+.header .middle {
+  width: 538px;
+  height: 75px;
+  margin-left: 160px;
+}
+.header .fl img {
+  margin-top: 7px;
+}
+.search {
+  width: 538px;
+  height: 55px;
+}
+.search input {
+  width: 454px;
+  height: 51px;
+  border: 2px solid #b1191a;
+  outline: none;
+}
+.search input[placeholder="语言开发"] {
+  color: #666;
+  font-size: 16px;
+}
+.search button {
+  width: 80px;
+  height: 51px;
+  border: 2px solid #b1191a;
+  background-color: #b1191a;
+  color: #fff;
+  font-size: 16px;
+}
+.hotwords {
+  width: 538px;
+  height: 20px;
+}
+.hotwords a {
+  margin-left: 15px;
+}
+.hotwords a:nth-child(1) {
+  color: #b1191a;
 }
