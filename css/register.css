@@ -1,0 +1,115 @@
+/* 注册样式 */
+.header {
+  border-bottom: 1px solid #000;
+  margin-bottom: 0;
+}
+.ft_copright {
+  padding-top: 20px;
+}
+.ft_copright ul {
+  margin-top: 0;
+}
+footer {
+  margin-top: 0;
+  height: 120px;
+}
+.register {
+  height: 695px;
+  border-bottom: 1px solid #ddd;
+  /* text-align: center; */
+}
+.align {
+  text-align: center;
+  padding-left: 84px;
+  padding-right: 234px;
+}
+.option {
+  height: 46px;
+  background-color: #ececec;
+  margin-top: 20px;
+  color: #333333;
+  line-height: 46px;
+}
+.tittle {
+  margin-left: 10px;
+  font-size: 18px;
+}
+.login {
+  font-size: 14px;
+}
+.login a {
+  color: #c81623;
+  margin-right: 10px;
+}
+.register input {
+  width: 242px;
+  height: 37px;
+}
+.regform {
+  width: 550px;
+  height: 374px;
+  margin: 50px auto 0;
+}
+.regform ul li {
+  margin-bottom: 21px;
+}
+.regform ul li label {
+  display: inline-block;
+  width: 84px;
+  height: 20px;
+  text-align: right;
+}
+.regform .error {
+  position: relative;
+  color: #c81623;
+  padding-left: 24px;
+  margin-left: 5px;
+}
+.error::before {
+  position: absolute;
+  top: -2px;
+  left: 0px;
+  content: "";
+  width: 20px;
+  height: 20px;
+  background: url(../static/error.png);
+}
+
+.password_intensity {
+  height: 20px;
+  text-align: right;
+}
+.password_intensity em {
+  display: inline-block;
+  color: #fff;
+  height: 18px;
+  width: 34px;
+  margin: 0 3px 0;
+  text-align: center;
+}
+.weak {
+  background-color: #de1111;
+}
+.medium {
+  background-color: #40b83f;
+}
+.strong {
+  background-color: #f79100;
+}
+.agree a {
+  color: #38a8e8;
+}
+.agree .agree_input {
+  width: 13px;
+  height: 13px;
+  margin-right: 3px;
+  vertical-align: middle;
+}
+.regform .btn a {
+  display: inline-block;
+  width: 200px;
+  height: 35px;
+  color: #fff;
+  background-color: #c81623;
+  line-height: 35px;
+}
