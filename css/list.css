@@ -1,0 +1,180 @@
+/* 列表页样式 */
+/* 引入字体图标 */
+@font-face {
+  font-family: "icomoon";
+  src: url("../fonts/icomoon.eot?ou61td");
+  src: url("../fonts/icomoon.eot?ou61td#iefix") format("embedded-opentype"),
+    url("../fonts/icomoon.ttf?ou61td") format("truetype"),
+    url("../fonts/icomoon.woff?ou61td") format("woff"),
+    url("../fonts/icomoon.svg?ou61td#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+/* logo */
+.header .logo .seckill {
+  margin-left: 12px;
+}
+
+.header .middle {
+  margin-left: 94px;
+}
+/* 列表分类 */
+.list_header {
+  width: 100%;
+  height: 45px;
+  border-bottom: 2px solid #b1191a;
+}
+.list_menu {
+  height: 43px;
+  text-align: center;
+}
+/* .list_menu ul {
+  width: 1200px;
+  height: 43px;
+} */
+.list_menu ul li {
+  float: left;
+  margin: 0 24px;
+  line-height: 43px;
+  font-size: 14px;
+}
+.list_menu ul .marked_menu {
+  font-size: 16px;
+  font-weight: 800;
+  margin: 0 28px;
+}
+.list_menu .last_menu::after {
+  content: "\e900";
+  font-family: "icomoon";
+}
+.list_tittle {
+  position: relative;
+  height: 120px;
+  background: url(../upload/list_tittle1.png);
+}
+.list_tittle ul {
+  position: absolute;
+  bottom: 18px;
+  left: 476px;
+}
+.list_tittle ul li:nth-child(odd) {
+  width: 56px;
+  height: 1px;
+  background-color: black;
+  margin-top: 11px;
+}
+.list_tittle ul li {
+  float: left;
+  font-size: 16px;
+  color: black;
+  margin: 0 17px;
+}
+.list_tittle::before {
+  position: absolute;
+  top: 27px;
+  left: 554px;
+  width: 93px;
+  height: 29px;
+  content: "";
+  background: url(../upload/list_tittle2.png);
+}
+.list_item ul {
+  margin-top: 28px;
+  height: 1840px;
+}
+.list_item ul li {
+  float: left;
+  width: 290px;
+  height: 460px;
+  background: url(../upload/list_item.png) no-repeat;
+  font-size: 14px;
+  margin-right: 13px;
+}
+.list_item ul li:nth-child(4n) {
+  margin-right: 0;
+}
+.list_item ul li:hover {
+  border: 1px solid #b1191a;
+}
+.list_item p {
+  padding: 0 15px;
+  margin-bottom: 10px;
+}
+.start {
+  margin-top: 290px;
+}
+.progress_bar {
+  margin: 0 16px;
+}
+.progress_bar .outline {
+  width: 120px;
+  height: 19px;
+  border: 1px solid red;
+  border-radius: 8px;
+}
+.progress_bar .fill {
+  width: 98px;
+  height: 17px;
+  background-color: red;
+  border-radius: 6px;
+}
+.current_price {
+  color: red;
+  font-size: 20px;
+  font-weight: 600;
+}
+.ex_price {
+  margin-left: 6px;
+  text-decoration: line-through;
+}
+.red_font {
+  color: red;
+}
+.list_item a {
+  margin-top: 6px;
+  display: block;
+  width: 288px;
+  height: 50px;
+  background-color: #b1191a;
+  text-align: center;
+  font-size: 20px;
+  color: #ffffff;
+  line-height: 50px;
+}
+/* 侧边栏 */
+.aside_bar {
+  position: fixed;
+  top: 650px;
+  right: 280px;
+  width: 68px;
+  height: 141px;
+
+  text-align: center;
+}
+.aside_bar a {
+  display: block;
+  color: #ffffff;
+  padding-top: 26px;
+  height: 70px;
+  /* margin-top: 26px; */
+}
+.aside_bar li:nth-child(2) {
+  background: url(../upload/aside_bar.png) no-repeat 20px 14px;
+  background-color: #b1191a;
+}
+.aside_bar ul li {
+  position: relative;
+  height: 70px;
+  background-color: #b1191a;
+  margin-bottom: 1px;
+}
+.aside_bar li:nth-child(1)::before {
+  position: absolute;
+  /* top: 18px; */
+  left: 24px;
+  font-size: 16px;
+  content: "\e903";
+  font-family: "icomoon";
+  color: #ffffff;
+}

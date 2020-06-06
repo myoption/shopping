@@ -125,14 +125,16 @@
 }
 .shoppingcart .count {
   position: absolute;
-  width: 20px;
-  height: 20px;
-  top: -10px;
-  right: 20px;
+  /* 不给宽度，由数量来撑开 */
+  /* width: 20px; */
+  height: 14px;
+  top: -5px;
+  left: 105px;
+  padding: 0 5px;
   background-color: #c81623;
-  line-height: 20px;
+  line-height: 14px;
   color: #fff;
-  border-radius: 50% 50% 50% 0;
+  border-radius: 7px 7px 7px 0;
 }
 /* 主页详细导航插入>符号 */
 .detail ul a::after {
@@ -140,4 +142,104 @@
   right: 10px;
   content: "\e902";
   font-family: "icomoon";
+}
+footer {
+  height: 420px;
+  margin-top: 38px;
+  background-color: #f5f5f5;
+}
+footer .ft_service {
+  height: 110px;
+  border-bottom: 1px solid #ededed;
+}
+.ft_service ul li {
+  float: left;
+  margin-top: 30px;
+  width: 240px;
+  height: 50px;
+}
+.ft_service ul li .ft_icon1 {
+  float: left;
+  margin: 0 8px 0 38px;
+  width: 50px;
+  height: 50px;
+  background: url(../static/icons.png) -252px -2px;
+}
+.ft_service ul li .ft_icon2 {
+  float: left;
+  margin: 0 8px 0 38px;
+  width: 50px;
+  height: 50px;
+  background: url(../static/icons.png) -254px -53px;
+}
+.ft_service ul li .ft_icon3 {
+  float: left;
+  margin: 0 8px 0 38px;
+  width: 50px;
+  height: 50px;
+  background: url(../static/icons.png) -256px -105px;
+}
+.ft_service ul li .ft_icon4 {
+  float: left;
+  margin: 0 8px 0 38px;
+  width: 50px;
+  height: 50px;
+  background: url(../static/icons.png) -257px -157px;
+}
+.ft_service ul li .ft_icon5 {
+  float: left;
+  margin: 0 8px 0 38px;
+  width: 50px;
+  height: 50px;
+  background: url(../static/icons.png) -257px -209px;
+}
+.ft_service_txt h4 {
+  margin-top: 5px;
+  font-size: 14px;
+}
+.ft_service_txt p {
+  font-size: 12px;
+}
+.ft_help {
+  height: 190px;
+  border-bottom: 1px solid #ededed;
+}
+.ft_help dl {
+  float: left;
+  width: 240px;
+  padding-left: 50px;
+}
+.ft_help dt {
+  margin-top: 22px;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+.ft_help .app {
+  width: 94px;
+  height: 94px;
+  background: url(../static/app.png);
+  margin-left: -14px;
+  margin-bottom: 10px;
+}
+.ft_copright {
+  height: 100px;
+}
+.ft_copright ul {
+  height: 16px;
+  margin: 16px 0 0 120px;
+}
+.ft_copright ul li {
+  float: left;
+  line-height: 16px;
+}
+.ft_copright ul li:nth-child(even) {
+  width: 1px;
+  height: 16px;
+  background-color: #999;
+  margin: 0 16px;
+}
+.ft_copright p {
+  margin-top: 5px;
+  text-align: center;
 }
