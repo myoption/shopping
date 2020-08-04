@@ -62,10 +62,80 @@ nav .fr a {
   color: #c81623;
 }
 .biglogo {
+  position: relative;
   width: 720px;
   height: 448px;
-  background: url(../upload/biglogo.png) no-repeat;
+  /* background: url(../upload/biglogo.png) no-repeat; */
   margin: 12px 11px 0 11px;
+  overflow: hidden;
+}
+.biglogo ul {
+  position: absolute;
+  left: 0;
+  width: 600%;
+  z-index: -1;
+}
+.biglogo ul li {
+  float: left;
+}
+.biglogo .arrow-l {
+  background-color: rgb(39, 37, 37);
+  position: absolute;
+  opacity: 0.5;
+  display: none;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+}
+.biglogo .arrow-r {
+  background-color: rgb(39, 37, 37);
+  position: absolute;
+  opacity: 0.5;
+  display: none;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+}
+.biglogo .arrow-l::after {
+  content: "\e901";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  font-size: 32px;
+  font-family: "icomoon";
+  color: #fff;
+  transform: translateY(-50%);
+}
+.biglogo .arrow-r::after {
+  content: "\e902";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  font-size: 32px;
+  font-family: "icomoon";
+  color: #fff;
+  transform: translateY(-50%);
+}
+.biglogo .circle {
+  position: absolute;
+  top: 90%;
+  left: 10%;
+  list-style: circle;
+}
+.biglogo .circle li {
+  float: left;
+  width: 20px;
+  height: 20px;
+  border: 1px solid white;
+  border-radius: 10px;
+  margin-right: 3px;
+}
+.biglogo .circle .current {
+  background-color: orange;
 }
 .service {
   position: relative;
