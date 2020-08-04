@@ -8,13 +8,24 @@ window.addEventListener("load", function () {
   var arrowRight = document.querySelector(".biglogo .arrow-r");
   var bannerWidth = banner.offsetWidth;
   //当鼠标进入时显示 左右箭头 离开隐藏
+  //自动播放
+  var timer = setInterval(function () {
+    //手动调用点击事件
+    arrowRight.click();
+  }, 2000);
   banner.addEventListener("mouseover", function () {
     arrowLeft.style.display = "block";
     arrowRight.style.display = "block";
+    clearInterval(timer);
+    timer = null;
   });
   banner.addEventListener("mouseout", function () {
     arrowLeft.style.display = "none";
     arrowRight.style.display = "none";
+    timer = setInterval(function () {
+      //手动调用点击事件
+      arrowRight.click();
+    }, 2000);
   });
   //根据图片的数量生成小圆点的数量
   //   console.log(ul.children.length);
@@ -56,25 +67,35 @@ window.addEventListener("load", function () {
       ul.style.left = 0;
       num = 1;
     }
-    /*  //方法2 animate 动画
-    num++;
-    animate(ul, -num * bannerWidth); */
+    /*  //方法2 animate 动画 此方法需要复制一张克隆图在最后cloneNode 即开头和结尾的图片相同
+    最后一张图不做动画 快速跳转
+    if(num == ul.children.length -1){
+    ul.style.left = 0;
+      num = 1;
+    }
+   //num赋值为1 则先使用在自增 num赋值为0则先自增再使用
+    animate(ul, -num * bannerWidth); num++; */
     //关联小圆圈
     for (var j = 0; j < ul.children.length; j++) {
       ol.children[j].className = "";
     }
     ol.children[num - 1].className = "current";
-    console.log(num);
+    // console.log(num);
   });
   arrowLeft.addEventListener("click", function () {
     if (num !== 1) {
-      ul.style.left = 721 * num + "px";
+      ul.style.left = ul.offsetLeft + 721 + "px";
       num--;
     } else {
       //重置ul位置 初始化num 即可循环播放
       ul.style.left = -721 * (ul.children.length - 1) + "px";
       num = ul.children.length;
     }
-    console.log(num);
+    for (var j = 0; j < ul.children.length; j++) {
+      ol.children[j].className = "";
+    }
+    ol.children[num - 1].className = "current";
+    s;
+    // console.log(num);
   });
 });
