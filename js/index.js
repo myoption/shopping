@@ -57,30 +57,42 @@ window.addEventListener("load", function () {
   //2.点击移动图片 注意 移动的是ul 不是li
   //设置变量 点一次自增一次
   var num = 1;
+  //设置节流阀 控制电机速度 flag
+  var flag = true;
   arrowRight.addEventListener("click", function () {
     //方法1
-    if (num < ul.children.length) {
+    /*     if (num < ul.children.length) {
       ul.style.left = -721 * num + "px";
       num++;
     } else {
       //重置ul位置 初始化num 即可循环播放
       ul.style.left = 0;
       num = 1;
+    } */
+    //方法2 animate 动画 此方法需要复制一张克隆图在最后cloneNode 即开头和结尾的图片相同
+    //最后一张图不做动画 快速跳转
+    if (flag) {
+      //关闭节流阀
+      flag = false;
+      if (num >= ul.children.length) {
+        ul.style.left = 0;
+        num = 0;
+      }
+      //num赋值为1 则先使用在自增 num赋值为0则先自增再使用
+      // console.log(bannerWidth);
+      // console.log(num);
+      //用回调函数在动画执行完之后开启节流阀
+      animate(ul, -num * bannerWidth, function () {
+        flag = true;
+      });
+      num++;
+      //关联小圆圈
+      for (var j = 0; j < ul.children.length; j++) {
+        ol.children[j].className = "";
+      }
+      ol.children[num - 1].className = "current";
+      // console.log(num);
     }
-    /*  //方法2 animate 动画 此方法需要复制一张克隆图在最后cloneNode 即开头和结尾的图片相同
-    最后一张图不做动画 快速跳转
-    if(num == ul.children.length -1){
-    ul.style.left = 0;
-      num = 1;
-    }
-   //num赋值为1 则先使用在自增 num赋值为0则先自增再使用
-    animate(ul, -num * bannerWidth); num++; */
-    //关联小圆圈
-    for (var j = 0; j < ul.children.length; j++) {
-      ol.children[j].className = "";
-    }
-    ol.children[num - 1].className = "current";
-    // console.log(num);
   });
   arrowLeft.addEventListener("click", function () {
     if (num !== 1) {
@@ -95,7 +107,6 @@ window.addEventListener("load", function () {
       ol.children[j].className = "";
     }
     ol.children[num - 1].className = "current";
-    s;
     // console.log(num);
   });
 });
