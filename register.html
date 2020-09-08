@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/base.css" />
     <link rel="stylesheet" href="css/common.css" />
     <link rel="stylesheet" href="css/register.css" />
+    <script src="js/login.js"></script>
 </head>
 
 <body>
@@ -35,12 +36,15 @@
         <div class="regform">
             <form action="" method="POST">
                 <ul>
-                    <li><label for="phonenumber">手机号：</label><input type="text" id="phonenumber"><span class="error">手机号码格式不正确，请从新输入</span></li>
-                    <li><label for="phonenumber">短信验证码：</label><input type="text" id="phonenumber"><span class="error">验证码不正确，请从新输入</span></li>
-                    <li><label for="phonenumber">登录密码：</label><input type="password" id="phonenumber"><span class="error">手机号码格式不正确，请从新输入</span></li>
+                    <li><label for="user_name">用户名：</label><input type="text" id="user_name"><span></span></li>
+                    <li><label for="nickname">昵称：</label><input type="text" id="nickname"><span></span></li>
+                    <li><label for="qq">QQ：</label><input type="text" id="qq"><span></span></li>
+                    <li><label for="phone_number">手机号：</label><input type="text" id="phone_number"><span></span></li>
+                    <li><label for="text_code">短信验证码：</label><input type="text" id="text_code"><span></span></li>
+                    <li><label for="pwd">登录密码：</label><input type="password" id="pwd"><span></span></li>
                     <li class="align password_intensity">密码强度<em class="weak">弱</em><em class="medium">中</em><em class="strong">强</em></li>
-                    <li><label for="phonenumber">确认密码：</label><input type="password" id="phonenumber"><span class="error">手机号码格式不正确，请从新输入</span></li>
-                    <li class="align agree"><input type="text" class="agree_input"><span>同意协议并注册<a href="">《用户协议》</a></span></li>
+                    <li><label for="confirm_pwd">确认密码：</label><input type="password" id="confirm_pwd"><span></span></li>
+                    <li class="align agree"><input type="checkbox" class="agree_input"><span>同意协议并注册<a href="">《用户协议》</a></span></li>
                     <li class="align btn"> <a href="">完成注册</a></li>
                 </ul>
             </form>

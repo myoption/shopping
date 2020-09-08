@@ -74,7 +74,21 @@ footer {
   height: 20px;
   background: url(../static/error.png);
 }
-
+.regform .right {
+  position: relative;
+  color: green;
+  padding-left: 24px;
+  margin-left: 5px;
+}
+.right::before {
+  position: absolute;
+  top: -2px;
+  left: 0px;
+  content: "";
+  width: 20px;
+  height: 20px;
+  background: url(../static/right.jpg);
+}
 .password_intensity {
   height: 20px;
   text-align: right;
